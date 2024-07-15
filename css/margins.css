@@ -1,0 +1,72 @@
+body {           
+    background-color: rgb(255, 248, 220); /* color del fondo */
+    border: 10px dotted rgb(250, 128, 114);
+    align-items: center;
+}
+.mein-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h1 { /* centra el titulo */
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+}
+.box-style {       /* Sirve para todos */
+    width: 250px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    margin: 20px;
+    display: inline-block;
+    text-align: justify;
+    font-size: 1.3em;
+    letter-spacing: 0;
+    word-spacing: 0;
+    line-height: 1.4em;
+    
+}
+/* Borde solid */
+.box-1 {
+border: 5px solid rgb(64, 64, .9) /* Es un marco */
+}
+
+/* Borde dashed*/
+.box-2 {
+border: 5px dashed rgb(76, 141, 96) /* Es un marco de lineas cortadas */
+}
+
+/* Borde dotted */
+.box-3 {
+    border: 5px dotted rgb(176, 149, 222) /* Es un marco de punticos */
+}
+
+/* Borde double*/
+.box-4 {
+    border: 10px double rgb(197, 197, 95) /* Es un marco doble linea muy peque */
+}
+.boto1 {
+    list-style: none; /* Para quitar el boton de inicio en los link */
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 14px; /* Se establece el tamaño de la fuente */
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; 
+    outline: none; 
+    color: rgb(225, 0, 0); /* El puento del boton */
+    background-color: rgb(245, 222, 179); /* Color del fondo del boton */
+    border: none; /* Se le hace un color de borde dependiendo de los siguientes datos, ej {2px solid red) se utilizaria sin las comillas*/
+    border-radius: 15px;/*Cambia las esquinas rodondeandolo */
+ 
+    box-shadow: 0 9px rgb(222, 184, 135); /* Sombra del boton */
+    margin-right: 20px; /* separar los botones */
+}
+.lista { /* Para centar el boton */
+    font-size: 1.6em;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+} 

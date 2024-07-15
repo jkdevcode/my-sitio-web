@@ -168,6 +168,42 @@ body {
    background-repeat: no-repeat; /* para que no se repita la imagen */
    background-position: center; /* centra la imagen en el contendor div */
 }
+.article-4 {
+   grid-area: article-4;
+   border-radius: 10px;
+   background-color: rgb(64, 64, 64, .7);
+   background-image: url(../img/lista_600x907.png);
+   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+   background-repeat: no-repeat; /* para que no se repita la imagen */
+   background-position: center; /* centra la imagen en el contendor div */
+}
+.article-5 {
+   grid-area: article-5;
+   border-radius: 10px;
+   background-color: rgb(64, 64, 64, .7);
+   background-image: url(../img/colores_400x711.png);
+   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+   background-repeat: no-repeat; /* para que no se repita la imagen */
+   background-position: center; /* centra la imagen en el contendor div */
+}
+.article-6 {
+   grid-area: article-6;
+   border-radius: 10px;
+   background-color: rgb(64, 64, 64, .7);
+   background-image: url(../img/margins_360x640.png);
+   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+   background-repeat: no-repeat; /* para que no se repita la imagen */
+   background-position: center; /* centra la imagen en el contendor div */
+}
+.article-7 {
+   grid-area: article-7;
+   border-radius: 10px;
+   background-color: rgb(64, 64, 64, .7);
+   background-image: url(../img/catalogo_400x711.jpg);
+   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+   background-repeat: no-repeat; /* para que no se repita la imagen */
+   background-position: center; /* centra la imagen en el contendor div */
+}
 
 .style-content { /* sirve para que al darle click en cualquier parte del contenedor sirva el enlace */
    display: block;

@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(152, 251, 152)
+}
+
+.color-style {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.colores-box {   /* para centar el contenido de la etiqueta */
+    display: flex; 
+    flex-direction: row;
+}
+.span {
+    color: white;
+    font-size: 1.6em;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.boto1 {
+    list-style: none; /*Para quitar el boton de inicio en los link*/
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 14px; /*Se establece el tamaño de la fuente*/
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; 
+    outline: none; 
+    color: rgb(225, 0, 0); /* El puento del boton */
+    background-color: rgb(124, 252, 0); /* Color del fondo del boton */
+    border: none; /* Se le hace un color de borde dependiendo de los siguientes datos, ej {2px solid red) se utilizaria sin las comillas */
+    border-radius: 15px;/* Cambia las esquinas rodondeandolo */
+ 
+    box-shadow: 0 9px rgb(50, 205, 50); /* Sombra del boton*/
+    margin-right: 20px; /* separar los botones */
+}
+.lista { /* Para centar el boton */
+    font-size: 1.6em;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+} 
+.color1{
+    
+    background-color: darkblue;
+}
+
+.color2{
+    
+background-color: goldenrod;
+}
+
+.color3{
+
+    background-color: dodgerblue;
+}
+
+.color4{
+
+    background-color:rgb(255, 140, 0);
+}
+
+.color5{
+
+    background-color:rgb(102, 205, 170);
+}
+
+.color6{
+
+    background-color:rgb(188, 143, 143);
+}
+
+.color7{
+
+    background-color:#ADFF2F;
+}
+
+.color8{
+
+    background-color:#7FFFD4;
+}
+
+.color9{
+
+    background-color:#A52A2A;
+}
