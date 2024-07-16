@@ -1,62 +1,64 @@
-*{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 /* Estilos */
 .main-page {
-   grid-area: main-page;
+	grid-area: main-page;
 }
 body {
-   background-color: #000000;
-   width: 100%;
-   height: 100vh;
-   display: grid;
-   grid-template: "empty-left           main-page                   empty-right" /
-       minmax(50px, 1fr) minmax(200px, 1500px) minmax(50px, 1fr);
-
+	background-color: #000000;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template:
+		"empty-left           main-page                   empty-right" /
+		minmax(50px, 1fr) minmax(200px, 1500px) minmax(50px, 1fr);
 }
 .titulo {
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   padding: 10px;
-   color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	color: white;
 }
-.main-content { /* sirve para volver mi contenedor en una cuadricula */
-   gap: 70px; /* el espacio entre contenedores */
-   margin-bottom: 50px; /* espacio entre la parte inferior con el contenido */
-   margin-top: 10px; /* espacio entre el header la imagen principal */
-   display: grid;
-   grid-template: "article-1 article-2 article-3 article-4"
-                   "article-5 article-6 article-7 article-8"
-                   "article-9 article-10 article-11 article-12"
-                   "article-13 article-14 article-15 article-16"
-                   "article-17 article-18 article-19 article-20"
-/*         "text-article-1 text-article-2 text-article-3"
+.main-content {
+	/* sirve para volver mi contenedor en una cuadricula */
+	gap: 70px; /* el espacio entre contenedores */
+	margin-bottom: 50px; /* espacio entre la parte inferior con el contenido */
+	margin-top: 10px; /* espacio entre el header la imagen principal */
+	display: grid;
+	grid-template:
+		"article-1 article-2 article-3 article-4"
+		"article-5 article-6 article-7 article-8"
+		"article-9 article-10 article-11 article-12"
+		"article-13 article-14 article-15 article-16"
+		"article-17 article-18 article-19 article-20"
+		/*         "text-article-1 text-article-2 text-article-3"
        "nuew-1 nuew-2 nuew-3"
        "text-article-1-2 text-article-2-2 text-article-3-2" */;
-
-} 
+}
 @media only screen and (max-width: 1200px) {
-   .box {
-       display: grid;
-       grid-template-columns: auto;
-   }
+	.box {
+		display: grid;
+		grid-template-columns: auto;
+	}
 
-   .main-content {
-       display: grid;
-       grid-template: "article-1 article-2 article-3"
-           /* "text-article-1 " */
-           "article-4 article-5 article-6"
-           "article-7 article-8 article-9"
-           "article-10 article-11 article-12"
-           "article-13 article-14 article-15"
-           "article-16 article-17 article-18"
-           "article-19 article-20 article-21"
+	.main-content {
+		display: grid;
+		grid-template:
+			"article-1 article-2 article-3"
+			/* "text-article-1 " */
+			"article-4 article-5 article-6"
+			"article-7 article-8 article-9"
+			"article-10 article-11 article-12"
+			"article-13 article-14 article-15"
+			"article-16 article-17 article-18"
+			"article-19 article-20 article-21";
 
-          /*  "text-article-2 "
+		/*  "text-article-2 "
            "article-3"
            "text-article-3"
            "nuew-1 "
@@ -65,30 +67,30 @@ body {
            "text-article-2-2"
            "nuew-3"
            "text-article-3-2"; */
-   }
-
+	}
 }
-@media only screen and (max-width: 900px) {
-   .box {
-       display: grid;
-       grid-template-columns: auto;
-   }
+@media only screen and (max-width: 800px) {
+	.box {
+		display: grid;
+		grid-template-columns: auto;
+	}
 
-   .main-content {
-       display: grid;
-       grid-template: "article-1 article-2"
-           /* "text-article-1 " */
-           "article-3 article-4"
-           "article-5 article-6"
-           "article-7 article-8"
-           "article-9 article-10"
-           "article-11 article-12"
-           "article-13 article-14"
-           "article-15 article-16"
-           "article-17 article-18"
-           "article-19 article-20"
-           "article-21 article-22"
-          /*  "text-article-2 "
+	.main-content {
+		display: grid;
+		grid-template:
+			"article-1 article-2"
+			/* "text-article-1 " */
+			"article-3 article-4"
+			"article-5 article-6"
+			"article-7 article-8"
+			"article-9 article-10"
+			"article-11 article-12"
+			"article-13 article-14"
+			"article-15 article-16"
+			"article-17 article-18"
+			"article-19 article-20"
+			"article-21 article-22";
+		/*  "text-article-2 "
            "article-3"
            "text-article-3"
            "nuew-1 "
@@ -97,116 +99,109 @@ body {
            "text-article-2-2"
            "nuew-3"
            "text-article-3-2"; */
-   }
-
+	}
 }
-@media only screen and (max-width: 600px) {
-   .box {
-       display: grid;
-       grid-template-columns: auto;
-   }
+@media only screen and (max-width: 560px) {
+	.box {
+		display: grid;
+		grid-template-columns: auto;
+	}
 
-   .main-content {
-       display: grid;
-       grid-template: "article-1 " auto
-           /* "text-article-1 " */
-           "article-2"
-           /* "text-article-2 " */
-           "article-3"
-           /* "text-article-3" */
-           "article-4"
-           "article-5"
-           "article-6"
-           "article-7"
-           "article-8"
-           "article-9"
-           "article-10"
-           "article-11"
-           "article-12"
-           "article-13"
-           "article-14"
-           "article-15"
-           "article-16"
-           "article-17"
-           "article-18"
-           "article-19"
-           "article-20"
-
-   }
-
+	.main-content {
+		display: grid;
+		grid-template:
+			"article-1 " auto
+			/* "text-article-1 " */
+			"article-2"
+			/* "text-article-2 " */
+			"article-3"
+			/* "text-article-3" */
+			"article-4"
+			"article-5"
+			"article-6"
+			"article-7"
+			"article-8"
+			"article-9"
+			"article-10"
+			"article-11"
+			"article-12"
+			"article-13"
+			"article-14"
+			"article-15"
+			"article-16"
+			"article-17"
+			"article-18"
+			"article-19"
+			"article-20";
+	}
 }
 .article {
-   border-radius: 10px;
-   height: 400px;
-   grid-area: article-1;
+	border-radius: 10px;
+	height: 400px;
+	grid-area: article-1;
+	background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+	background-repeat: no-repeat; /* para que no se repita la imagen */
+	background-position: center; /* centra la imagen en el contendor div */
 }
 .article-1 {
-   grid-area: article-1;
-   border-radius: 10px;
-   background-color: rgb(64, 64, 64, .7);
-   background-image: url(../img/game_of_thrones_400x712.png);
-   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
-   background-repeat: no-repeat; /* para que no se repita la imagen */
-   background-position: center; /* centra la imagen en el contendor div */
+	grid-area: article-1;
+	border-radius: 10px;
+	background-color: rgb(64, 64, 64, 0.7);
+	background-image: url(../img/game_of_thrones_400x712.png);
 }
 .article-2 {
-   grid-area: article-2;
-   border-radius: 10px;
-   background-color: rgb(64, 64, 64, .7);
-   background-image: url(../img/netflix_400x711.png);
-   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
-   background-repeat: no-repeat; /* para que no se repita la imagen */
-   background-position: center; /* centra la imagen en el contendor div */
+	grid-area: article-2;
+	border-radius: 10px;
+	background-color: rgb(64, 64, 64, 0.7);
+	background-image: url(../img/netflix_400x711.png);
 }
 
 .article-3 {
-   grid-area: article-3;
-   border-radius: 10px;
-   background-color: rgb(64, 64, 64, .7);
-   background-image: url(../img/disney_664_1180.png);
-   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
-   background-repeat: no-repeat; /* para que no se repita la imagen */
-   background-position: center; /* centra la imagen en el contendor div */
+	grid-area: article-3;
+	border-radius: 10px;
+	background-color: rgb(64, 64, 64, 0.7);
+	background-image: url(../img/disney_664_1180.png);
 }
 .article-4 {
-   grid-area: article-4;
-   border-radius: 10px;
-   background-color: rgb(64, 64, 64, .7);
-   background-image: url(../img/lista_600x907.png);
-   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
-   background-repeat: no-repeat; /* para que no se repita la imagen */
-   background-position: center; /* centra la imagen en el contendor div */
+	grid-area: article-4;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/lista_400x614.png);
 }
 .article-5 {
-   grid-area: article-5;
-   border-radius: 10px;
-   background-color: rgb(64, 64, 64, .7);
-   background-image: url(../img/colores_400x711.png);
-   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
-   background-repeat: no-repeat; /* para que no se repita la imagen */
-   background-position: center; /* centra la imagen en el contendor div */
+	grid-area: article-5;
+	border-radius: 10px;
+	background-color: rgb(64, 64, 64, 0.7);
+	background-image: url(../img/colores_400x711.png);
 }
 .article-6 {
-   grid-area: article-6;
-   border-radius: 10px;
-   background-color: rgb(64, 64, 64, .7);
-   background-image: url(../img/margins_360x640.png);
-   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
-   background-repeat: no-repeat; /* para que no se repita la imagen */
-   background-position: center; /* centra la imagen en el contendor div */
+	grid-area: article-6;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/margins_360x640.png);
 }
 .article-7 {
-   grid-area: article-7;
-   border-radius: 10px;
-   background-color: rgb(64, 64, 64, .7);
-   background-image: url(../img/catalogo_400x711.jpg);
-   background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
-   background-repeat: no-repeat; /* para que no se repita la imagen */
-   background-position: center; /* centra la imagen en el contendor div */
+	grid-area: article-7;
+	border-radius: 10px;
+	background-color: rgb(64, 64, 64, 0.7);
+	background-image: url(../img/catalogo_400x711.jpg);
+}
+.article-8 {
+	grid-area: article-8;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/table_374x666.png);
+}
+.article-9 {
+	grid-area: article-9;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/formulario_374x666.png);
 }
 
-.style-content { /* sirve para que al darle click en cualquier parte del contenedor sirva el enlace */
-   display: block;
-   width: 100%;
-   height: 100%;
+.style-content {
+	/* sirve para que al darle click en cualquier parte del contenedor sirva el enlace */
+	display: block;
+	width: 100%;
+	height: 100%;
 }
