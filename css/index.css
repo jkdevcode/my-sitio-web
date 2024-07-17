@@ -198,6 +198,24 @@ body {
 	background-color: rgba(9, 9, 9, 0.7);
 	background-image: url(../img/formulario_374x666.png);
 }
+.article-10 {
+	grid-area: article-10;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/menu_icons_338x600-removebg-preview.png);
+}
+.article-11 {
+	grid-area: article-11;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/menu_sena.jpg);
+}
+.article-12 {
+	grid-area: article-12;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/menu_subitems_288x512.png);
+}
 
 .style-content {
 	/* sirve para que al darle click en cualquier parte del contenedor sirva el enlace */

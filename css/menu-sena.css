@@ -1,0 +1,49 @@
+.menu1 {
+    display: inline-block;
+    border-right: 2px solid rgb(8, 2, 1);
+    padding: 8px;
+    background-color: rgb(221, 214, 214);
+
+
+}
+
+.menu1:hover {
+    background-color: rgb(172, 170, 170);
+}
+a {
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+  
+}
+nav {
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu2 {
+    display: block;
+    margin: 5px;
+    border: 5px solid transparent;
+    background-color: rgb(87, 87, 86);
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+
+}
+.menu2:hover{
+    background-color: rgb(126, 122, 122);
+}
+.color {
+    color: white;
+  
+    font-size: 14px;
+}
+
+li{
+    cursor: pointer;
+}
