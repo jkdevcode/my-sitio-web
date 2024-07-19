@@ -216,6 +216,18 @@ body {
 	background-color: rgba(9, 9, 9, 0.7);
 	background-image: url(../img/menu_subitems_288x512.png);
 }
+.article-13 {
+	grid-area: article-13;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/toggle_gif.gif);
+}
+.article-14 {
+	grid-area: article-14;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/flexbox_400x711.png);
+}
 
 .style-content {
 	/* sirve para que al darle click en cualquier parte del contenedor sirva el enlace */
