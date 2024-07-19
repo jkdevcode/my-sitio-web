@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: grid;
+	width: 100%;
+	height: 100vh;
+	grid-template:
+		"empty-let          main-page                   empty-right" /
+		minmax(50px, 1fr) minmax(200px, 1500px) minmax(50px, 1fr);
+}
+.main-page {
+	grid-area: main-page;
+}
+/* Estilos del header y el logo */
+header {
+	display: grid;
+	gap: 30px;
+	height: 70px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	grid-template:
+		" logo    main-menu" /
+		150px minmax(150px, 1fr);
+}
+.logo {
+	border-radius: 15px;
+	grid-area: logo;
+	background-image: url("../img/lego_logo.png");
+	width: 70%;
+	margin-left: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.main-menu {
+	grid-area: main-menu;
+	display: none;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: relative;
+}
+.style-tex {
+	font-family: verdana, sans-serif;
+	font-size: 1.6em;
+	color: rgb(0, 0, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-menu {
+	display: flex;
+	align-items: center;
+}
+
+.main-menu ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.main-menu li {
+	font-size: 1.2em;
+	margin-right: 50px;
+}
+
+.main-menu a {
+	text-decoration: none;
+	color: #000000;
+	transition: color 0.3s;
+	padding-left: 50px;
+}
+
+.main-menu a:hover {
+	color: #545454;
+}
+.menu-toggle {
+	display: none;
+	background: none;
+	border: none;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+/* Estilos de contenido */
+.main-content {
+	/* sirve para volver mi contenedor en una cuadricula */
+	gap: 50px; /* el espacio entre contenedores */
+	margin-bottom: 30px; /* espacio entre la parte inferior con el contenido */
+	margin-top: 30px; /* espacio entre el header la imagen principal */
+	display: grid;
+	grid-template:
+		"main-img       main-img        main-img "
+		"article-1      article-2       article-3"
+		"text-article-1 text-article-2 text-article-3"
+		"article-4      article-5       article-6"
+		"text-article-4 text-article-5 text-article-6";
+}
+.main-img {
+	grid-area: main-img;
+	height: 500px;
+	border-radius: 10px;
+	background-image: url("../img/img_lego_principal.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.text-article {
+	font-size: 1em;
+	text-align: justify;
+}
+.img-article {
+	width: 100%;
+}
+.article {
+	grid-area: article-1;
+	border-radius: 10px;
+	height: 270px;
+	/* background-color: rgb(64, 64, 64, .7); */
+	background-size: cover; /* la imagen se ajusta para cubrir completamente el div */
+	background-repeat: no-repeat; /* para que no se repita la imagen */
+	background-position: center; /* centra la imagen en el contendor div */
+}
+.article-1 {
+	background-image: url(../img/img_lego_uno.jpg);
+	grid-area: article-1;
+}
+.article-2 {
+	background-image: url(../img/img_lego_dos.jpg);
+	grid-area: article-2;
+}
+.article-3 {
+	background-image: url(../img/img_lego_tres.png);
+	grid-area: article-3;
+}
+.article-4 {
+	background-image: url(../img/img_lego_cuatro.jpeg);
+	grid-area: article-4;
+}
+.article-5 {
+	background-image: url(../img/img_lego_cinco.jpeg);
+	grid-area: article-5;
+}
+.article-6 {
+	background-image: url(../img/img_lego_seis.jpeg);
+	grid-area: article-6;
+}
+.text-article-1,
+.text-article-2,
+.text-article-3,
+.text-article-4,
+.text-article-5,
+.text-article-6 {
+	text-align: justify;
+	line-height: 25px;
+}
+.text-article-1 {
+	margin-top: 10px;
+	grid-area: text-article-1;
+}
+.text-article-2 {
+	margin-top: 10px;
+	grid-area: text-article-2;
+}
+.text-article-3 {
+	margin-top: 10px;
+	grid-area: text-article-3;
+}
+.text-article-4 {
+	margin-top: 10px;
+	grid-area: text-article-4;
+}
+.text-article-5 {
+	margin-top: 10px;
+	grid-area: text-article-5;
+}
+.text-article-6 {
+	margin-top: 10px;
+	grid-area: text-article-6;
+}
+@media only screen and (max-width: 760px) {
+	.box {
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.main-content {
+		display: grid;
+		grid-template:
+			"main-img  main-img"
+			"article-1 article-2"
+			"text-article-1 text-article-2"
+			"article-3 article-4"
+			"text-article-3 text-article-4"
+			"article-5 article-6"
+			"text-article-5 text-article-6";
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.box {
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.main-img {
+		grid-column: span 1;
+	}
+	.menu-toggle {
+		display: block;
+	}
+	.main-menu ul {
+		display: none;
+		flex-direction: column;
+	}
+	.main-menu ul.show {
+		display: flex;
+        padding-left: 50px;
+        margin: -50px;
+	}
+	.main-content {
+		display: grid;
+		grid-template:
+			"main-img"
+			"article-1"
+			"text-article-1"
+			"article-2"
+			"text-article-2"
+			"article-3"
+			"text-article-3"
+			"article-4 "
+			"text-article-4 "
+			"article-5"
+			"text-article-5 "
+			"article-6"
+			"text-article-6 ";
+	}
+}

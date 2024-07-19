@@ -228,6 +228,24 @@ body {
 	background-color: rgba(9, 9, 9, 0.7);
 	background-image: url(../img/flexbox_400x711.png);
 }
+.article-15 {
+	grid-area: article-15;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/grid_gif.gif);
+}
+.article-16 {
+	grid-area: article-16;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/maquetacion_266x380.png);
+}
+.article-17 {
+	grid-area: article-17;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/maquetacion2_400x712.png);
+}
 
 .style-content {
 	/* sirve para que al darle click en cualquier parte del contenedor sirva el enlace */

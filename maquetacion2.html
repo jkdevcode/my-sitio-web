@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/maquetacion2.css" />
+	</head>
+	<body>
+		<div class="main-page">
+			<header class="box">
+				<div class="logo"><span class="style-tex"></span></div>
+				<nav class="main-menu">
+					<button class="menu-toggle">&#9776;</button>
+					<ul class="menu-list">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Productos</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="#">Sobre Nosotros</a></li>
+						<li><a href="#">Contactenos</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="main-content">
+				<div class="main-img"><!-- Img Principal --></div>
+
+				<article class="article article-1">
+					<div class="style-img img-article"><!-- Img Article one --></div>
+				</article>
+				<div class="text-article-1">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+					sed, aliquam doloribus delectus nemo neque odio possimus reiciendis
+					aliquid inventore dolores veniam. Animi quam, facere eaque sequi in
+					sapiente cum!
+				</div>
+
+				<article class="article article-2">
+					<div class="style-img img-article"><!-- Img Article two --></div>
+				</article>
+				<div class="text-article-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+					sed, aliquam doloribus delectus nemo neque odio possimus reiciendis
+					aliquid inventore dolores veniam. Animi quam, facere eaque sequi in
+					sapiente cum!
+				</div>
+
+				<article class="article article-3">
+					<div class="style-img img-article"><!-- Img Article three --></div>
+				</article>
+				<div class="text-article-3">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+					sed, aliquam doloribus delectus nemo neque odio possimus reiciendis
+					aliquid inventore dolores veniam. Animi quam, facere eaque sequi in
+					sapiente cum!
+				</div>
+
+				<article class="article article-4">
+					<div class="style-img img-article"><!-- Img Article four --></div>
+				</article>
+				<div class="text-article-4">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+					sed, aliquam doloribus delectus nemo neque odio possimus reiciendis
+					aliquid inventore dolores veniam. Animi quam, facere eaque sequi in
+					sapiente cum!
+				</div>
+
+				<article class="article article-5">
+					<div class="style-img img-article"><!-- Img Article five --></div>
+				</article>
+				<div class="text-article-5">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+					sed, aliquam doloribus delectus nemo neque odio possimus reiciendis
+					aliquid inventore dolores veniam. Animi quam, facere eaque sequi in
+					sapiente cum!
+				</div>
+
+            <article class="article article-6">
+                <div class="style-img img-article"><!-- Img Article six --></div>
+            </article>
+            <div class="text-article-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                sed, aliquam doloribus delectus nemo neque odio possimus reiciendis
+                aliquid inventore dolores veniam. Animi quam, facere eaque sequi in
+                sapiente cum!
+            </div>
+        </div>
+		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const menuToggle = document.querySelector(".menu-toggle");
+				const menuList = document.querySelector(".menu-list");
+
+				menuToggle.addEventListener("click", () => {
+					menuList.classList.toggle("show");
+				});
+			});
+		</script>
+	</body>
+</html>
