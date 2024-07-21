@@ -246,6 +246,12 @@ body {
 	background-color: rgba(9, 9, 9, 0.7);
 	background-image: url(../img/maquetacion2_400x712.png);
 }
+.article-18 {
+	grid-area: article-18;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/image-removebg.png);
+}
 
 .style-content {
 	/* sirve para que al darle click en cualquier parte del contenedor sirva el enlace */

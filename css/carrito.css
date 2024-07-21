@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	font-family: poppins;
+}
+/* body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2vh;
+} */
+
+.main-content {
+	width: 700px;
+	height: 500px;
+	border: 2px solid #85929E;
+	border-radius: 10px;
+	margin: 50px 0 0 10px;
+}
+.titulo {
+	color: white;
+}
+.titulo2 {
+	color: white;
+}
+.box-subtotal {
+	padding: 20px 20px 10px 20px;
+	font-size: 1.7em;
+}
+#subtotal {
+	font-size: 1.4em;
+	font-weight: 500;
+}
+.box-proceder-pago {
+	/*  padding: 0 20px 20px 20px; */
+	height: 60px;
+	/* font-size: 1.2em; */
+	display: flex;
+	border: 2px solid #85929E;
+	justify-content: center;
+	align-items: center;
+	background-color: #B2BABB;
+	border-radius: 10px;
+	margin: 0 20px 20px 20px;
+	font-size: 1.4em;
+}
+#numeroProductos {
+	font-weight: 500;
+	font-size: 1.1em;
+}
+.product-content {
+	display: grid;
+	grid-template:
+		"empty-left box-img-producto       box-info-producto empty-right"
+		"empty-left box-buttons-cantidad  box-info-producto empty-right" /
+		20px 3fr 4fr 20px;
+}
+.box-img-producto {
+	grid-area: box-img-producto;
+}
+.box-info-producto {
+	grid-area: box-info-producto;
+	display: flex;
+	flex-direction: column;
+	padding: 0 25px 0 25px;
+}
+.title {
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+.descripcion {
+	font-size: 1.4em;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.material {
+	font-size: 1.3em;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.info-precio {
+	font-size: 1.3em;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.signo-precio-unidad,
+.precio-unidad {
+	font-size: 2em;
+	font-weight: 600;
+}
+.box-buttons-cantidad {
+	font-size: 1.3em;
+	display: flex;
+	flex-direction: row;
+	margin: 40px;
+	grid-area: box-buttons-cantidad;
+	justify-content: center;
+	margin-top: 20px;
+}
+.box-minus,
+.box-cant,
+.box-plus {
+	width: 60px;
+	height: 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #85929E;
+	font-weight: 600;
+}
+
+.box-minus {
+	color: white;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: #B2BABB;
+}
+.box-plus {
+	color: white;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #B2BABB;
+}
+.centered-image {
+	display: block;
+	margin: 0 auto;
+	width: 120%;
+	border-radius: 10px;
+}
+
+.box-buttons-cantidad {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

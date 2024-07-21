@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="icons/all.css">
+
+</head>
+<body>
+    <div class="main-content">
+        <div class="box-subtotal">
+            <label>Subtotal cop $</label>
+             <label id="subTotal">0</label>
+        </div>
+        <div class="box-proceder-pago">
+            <label class="titulo">proceder al pago</label>
+            <label class="titulo2" id="numeroProductos">(0 productos)</label>
+        </div>
+       <div class="product-content">
+        <div class="box-img-producto">
+        <img src="img/image-removebg.png" alt="" class="centered-image">
+        </div>
+        <div class="box-info-producto">
+        <h3 class="title">Robot Wall-E</h3>
+        <label  class="descripcion">Wall-E, un robot revolucionario, transformará el mundo. Con inteligencia artificial avanzada y habilidades excepcionales.</label>
+            <label class="material">Resina</label>
+            <label class="info-precio">cop <span class="signo-precio-unidad">$</span>
+            <span id="precioUnidad" class="precio-unidad">0</span></label>
+            </div>
+            <div class="box-buttons-cantidad">
+                <div id="boxMinus"class="box-minus">
+                <i class="fa-solid fa-minus"></i>
+                </div>
+               <div id="boxCantidad"class="box-cant">0</div>
+               <div id="boxPlus"class="box-plus">
+               <i class="fa-solid fa-plus"></i>
+             </div>
+           </div> 
+            </div>
+     
+</div>
+
+    
+    <script src="js/carrito.js"></script>
+</body>
+</html>
