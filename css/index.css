@@ -252,6 +252,18 @@ body {
 	background-color: rgba(9, 9, 9, 0.7);
 	background-image: url(../img/image-removebg.png);
 }
+.article-19 {
+	grid-area: article-19;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/amazon_gif.gif);
+}
+.article-20 {
+	grid-area: article-20;
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+	background-image: url(../img/estrellas_gif.gif);
+}
 
 .style-content {
 	/* sirve para que al darle click en cualquier parte del contenedor sirva el enlace */
