@@ -3,7 +3,7 @@ let boxCantidad = document.getElementById("boxCantidad");
 let boxPlus = document.getElementById("boxPlus");
 let subTotal = document.getElementById("subTotal");
 let auxSubTotal = document.getElementById("auxSubTotal");
-let numeroProductos = document.getElementById("numeroProductos");
+ 
 let valorProducto = 500000;
 let auxValorProducto = new Intl.NumberFormat("de-DE").format(valorProducto);
 document.getElementById("precioUnidad").innerHTML = auxValorProducto;
